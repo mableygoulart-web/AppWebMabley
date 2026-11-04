@@ -3,7 +3,7 @@ using System.Data;
 
 namespace AppWebMabley.DAO;
 
-public class ConexaoDataAccess
+public class ConexaoData
 {
     private readonly string _conexaoString = "Data Source=processos.db";
 

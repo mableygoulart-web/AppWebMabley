@@ -5,7 +5,7 @@ namespace AppWebMabley.DAO;
 
 public class ProcessoDAO
 {
-    private readonly ConexaoDataAccess _conexao = new();
+    private readonly ConexaoData _conexao = new();
 
     public List<Processo> Listar()
     {
