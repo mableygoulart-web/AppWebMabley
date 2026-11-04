@@ -1,19 +1,25 @@
-﻿namespace AppWebMabley.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AppWebMabley.Model;
+
+public class Processo
 {
-    public class Processo
-    {
-        public int Id { get; set; }
+    public int Id { get; set; }
 
-        public string Numero { get; set; } = string.Empty;
+    [Required(ErrorMessage = "O campo Número é obrigatório.")]
+    public string? Numero { get; set; }
 
-        public DateTime? Data { get; set; }
+    [Required(ErrorMessage = "O campo Data é obrigatório.")]
+    public DateOnly? Data { get; set; }
 
-        public string Interessado { get; set; } = string.Empty;
+    [Required(ErrorMessage = "O campo Interessado é obrigatório.")]
+    public string? Interessado { get; set; }
 
-        public string Assunto { get; set; } = string.Empty;
+    [Required(ErrorMessage = "O campo Assunto é obrigatório.")]
+    public string? Assunto { get; set; }
 
-        public string Descricao { get; set; } = string.Empty;
+    public string? Descricao { get; set; }
 
-        public string Situacao { get; set; } = string.Empty;
-    }
+    [Required(ErrorMessage = "O campo Situação é obrigatório.")]
+    public string? Situacao { get; set; }
 }
